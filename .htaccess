@@ -1,0 +1,6 @@
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^category/([0-9]+)/([0-9a-zA-Z_-]+) category.php?p=$1&category=$2 [NC,L]
+RewriteRule ^single/([0-9]+)/([0-9a-zA-Z_-]+) single.php?id=$1&name=$2 [NC,L]

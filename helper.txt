@@ -1,0 +1,2 @@
+Specific file
+RewriteRule ^([^/\.]+)/([^/\.]+)?$ verify-user.php?p=$1&vid=$2
